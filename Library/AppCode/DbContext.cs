@@ -7,6 +7,7 @@ using System.Linq;
 using System.Web;
 using DAL;
 using BLL;
+using System.Reflection;
 
 namespace Data
 {
@@ -16,67 +17,103 @@ namespace Data
         public SqlConnection Conn { get; set; }
         public DbContext()
         {
-            ConnStr = ConfigurationManager.ConnectionStrings["ConnStr"].ConnectionString;
-            //ניצור אובייקט מסוג חיבור /צינור לבסיס הנתונים
-            // SqlConnection Conn=new SqlConnection(ConnStr);
-
-            // ניצור אובייקט מסוג חיבור / צינור לבסיס הנתונים
-            Conn = new SqlConnection();
-            //הגדרת מחרוזת התחברות עבור אובייקט הצינור 
-            Conn.ConnectionString = ConnStr;
-            Conn.Open(); //פתיחת הצינור /החבירו לבסיס הנתונים
+            ConnStr = ConfigurationManager.ConnectionStrings["ConnStr"].ToString();
+            Conn = new SqlConnection(ConnStr);
+            Open();
         }
-        public DbContext(string ConnStr)
+        public void Open()
         {
-            this.ConnStr=ConnStr;
-            Conn = new SqlConnection();
-            Conn.ConnectionString = ConnStr;
-            Conn.Open(); 
+            Conn.Open();
         }
         public void Close()
         {
             Conn.Close();
         }
-        public int GetMaxById(string TableName,string PrimaryKeyName)
+        public DataTable Execute(string Sql)
+        {
+            DataTable Dt = new DataTable();
+            SqlCommand Cmd = new SqlCommand(Sql, Conn);
+
+            SqlDataAdapter Da = new SqlDataAdapter(Cmd);
+            Da.Fill(Dt);
+            Cmd.Dispose();
+            //  Close();
+            return Dt;
+        }
+        public int ExecuteNonQuery(string Sql)
+        {
+            int RecCount = 0;
+            SqlCommand Cmd = new SqlCommand(Sql, Conn);
+            RecCount = Cmd.ExecuteNonQuery();
+            Cmd.Dispose();
+            //Close();
+            return RecCount;
+        }
+
+        public int GetMaxId(string TableName, string PrimaryKeyName)
         {
             int MaxId = -1;
-            string Sql = $"SELECT MAX({PrimaryKeyName})FROM {TableName}";
+            string Sql = $"SELECT MAX( {PrimaryKeyName}) FROM {TableName} ";
             SqlCommand Cmd = new SqlCommand(Sql, Conn);
-            MaxId=(int)Cmd.ExecuteScalar();
+            MaxId = (int)Cmd.ExecuteScalar();
             Cmd.Dispose();
+            //   Close();
             return MaxId;
         }
-        public int ExecuteNonQuery(string Sql)   // עבור שאילתות שלא מחזירות ערך
+        public DataTable ExecuteWithParams(string Sql, List<SqlParameter> Params)
         {
-            SqlCommand Cmd = new SqlCommand();
-            Cmd.Connection = Conn;   
-            Cmd.CommandText = Sql; 
-
-            int RetVal = Cmd.ExecuteNonQuery();
-            Cmd.Dispose(); //שחרור הזכרון באופן יזום
-            return RetVal; // החזרת מספר הרשומות שהושפעו מהשאילתה
-        } 
-        public object ExecuteScalar(string Sql)
-        {
-            SqlCommand Cmd = new SqlCommand();
-            Cmd.Connection = Conn;
-            Cmd.CommandText = Sql;
-            object RetVal = Cmd.ExecuteScalar();
-            Cmd.Dispose(); //שחרור הזכרון באופן יזום
-            return RetVal; // החזרת מספר הרשומות שהושפעו מהשאילתה
-        
-        }
-        public DataTable Execute(string Sql)  //פונקציה זו תשמש לשליפה של הנתונים
-        {
-            SqlCommand Cmd = new SqlCommand();
-            Cmd.Connection = Conn; // הגדרת הצינור בו ישתמש אובייקט הפקודה
-            Cmd.CommandText = Sql; // הגדרת השאילתה אותה ברצוננו לבצע
-            DataTable Dt = new DataTable();// יצירת אובייקט מסוג טבלת נתונים
-            SqlDataAdapter Da=new SqlDataAdapter(); // הגדרת אובייקט מסוג מתאם נתונים
-            Da.SelectCommand = Cmd;  // הגדרת תותח השאילתות אותו יתפעל המתאם
-            Da.Fill(Dt); //  מילוי טבלת הנתונים בתוצאות שחזרו מהפעלת השאילתה
-            return Dt; // החזרת מספר הרשומות שהושפעו השאילתה
+            DataTable Dt = new DataTable();
+            SqlCommand Cmd = new SqlCommand(Sql, Conn);
+            for (int i = 0; i < Params.Count; i++)
+            {
+                Cmd.Parameters.Add(Params[i]);
+            }
+            SqlDataAdapter Da = new SqlDataAdapter(Cmd);
+            Da.Fill(Dt);
+            Cmd.Dispose();
+            //  Close();
+            return Dt;
         }
 
+
+        public int ExecuteNonQueryWithParams(string Sql, List<SqlParameter> Params)
+        {
+            int RecCount = 0;
+            SqlCommand Cmd = new SqlCommand(Sql, Conn);
+            for (int i = 0; i < Params.Count; i++)
+            {
+                Cmd.Parameters.Add(Params[i]);
+            }
+            RecCount = Cmd.ExecuteNonQuery();
+            Cmd.Dispose();
+            //  Close();
+            return RecCount;
+        }
+
+
+        public string GetValueByKey(string TableName, string KeyName, string ValueName, string KeyValue)
+        {
+            string RetValue = null;
+            string Sql = $"SELECT top 1 {ValueName} FROM {TableName} where {KeyName}='{KeyValue}'  ";
+            SqlCommand Cmd = new SqlCommand(Sql, Conn);
+            RetValue = (string)(Cmd.ExecuteScalar() + "");
+            Cmd.Dispose();
+            //   Close();
+            return RetValue;
+        }
+
+        public static List<SqlParameter> CreateParameters(object parametersObject)
+        {
+            var parameters = new List<SqlParameter>();
+
+            foreach (PropertyInfo property in parametersObject
+                .GetType()
+                .GetProperties(BindingFlags.Public | BindingFlags.Instance))
+            {
+                parameters.Add(new SqlParameter($"@{property.Name}", property.GetValue(parametersObject, null)));
+            }
+
+            return parameters;
+        }
     }
 }

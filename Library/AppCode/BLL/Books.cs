@@ -9,16 +9,17 @@ namespace BLL
 {
     public class Books
     {
-        public int BookId { get; set; }
-        public string BookName { get; set; }
-        public string BookAuthor { get; set; }
-        public string BookDescription { get; set; }
+        public int UserId { get; set; }
+        public string UserName { get; set; }
+        public string UserAuthor { get; set; }
+        public string UserDescription { get; set; }
         public DateTime Year { get; set; }
-        public string BookLang { get; set; }
+        public string UserLang { get; set; }
         public string Location { get; set; }
         public string Status { get; set; }
         public DateTime TakenDate { get; set; }
         public DateTime ReturnTaken { get; set; }
+
 
         public int Save()
         {

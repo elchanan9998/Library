@@ -23,9 +23,16 @@ namespace DAL
             {
                 Tmp = new Books()
                 {
-                    BookId=int.Parse (Dt.Rows[0]["BookId"]+" "),  //פונה אל השורה הראשונה ואל שם העמודה
-                    BookName = Dt.Rows[0]["BookName"]+"",
-                     Year = DateTime.Parse(Dt.Rows[0]["Year"]+"")  
+                    UserId=int.Parse (Dt.Rows[0]["UserId"]+" "),  //פונה אל השורה הראשונה ואל שם העמודה
+                    UserName = Dt.Rows[0]["UserName"]+"",
+                     Year = DateTime.Parse(Dt.Rows[0]["Year"]+""),
+                     UserAuthor = Dt.Rows[0]["UserAuthor"] + "",
+                    UserDescription = Dt.Rows[0]["UserDescription"] + "",
+                    UserLang = Dt.Rows[0]["UserLang"] + "",
+                    Location = Dt.Rows[0]["Location"] + "",
+                    Status = Dt.Rows[0]["Status"] + "",
+                    TakenDate = DateTime.Parse(Dt.Rows[0]["TakenDate"] + ""),
+                    ReturnTaken = DateTime.Parse(Dt.Rows[0]["ReturnTaken"] + ""),
                 };
             }
 
@@ -43,10 +50,17 @@ namespace DAL
             {
                 Books Tmp = new Books()
                 {
-                    BookId = int.Parse(Dt.Rows[i]["BookId"] + " "),  // i פונה אל השורה במקום  ה     
-                    BookName = Dt.Rows[i]["BookName"] + "",
-                    Year = DateTime.Parse(Dt.Rows[i]["Year"] + "")
-                 };
+                    UserId = int.Parse(Dt.Rows[i]["UserId"] + " "),  // i פונה אל השורה במקום  ה     
+                    UserName = Dt.Rows[i]["UserName"] + "",
+                    Year = DateTime.Parse(Dt.Rows[i]["Year"] + ""),
+                    UserAuthor = Dt.Rows[0]["UserAuthor"] + "",
+                    UserDescription = Dt.Rows[0]["UserDescription"] + "",
+                    UserLang = Dt.Rows[0]["UserLang"] + "",
+                    Location = Dt.Rows[0]["Location"] + "",
+                    Status = Dt.Rows[0]["Status"] + "",
+                    TakenDate = DateTime.Parse(Dt.Rows[0]["TakenDate"] + ""),
+                    ReturnTaken = DateTime.Parse(Dt.Rows[0]["ReturnTaken"] + ""),
+                };
                 LstTmp.Add(Tmp);
             }
 
@@ -66,21 +80,21 @@ namespace DAL
         public static int Save(Books Tmp)
         {
             int ReCount = 0;
-            DbContext db = new DbContext();
+            DbContext Db = new DbContext();
             string Sql = "";
-           if(Tmp.BookId == -1)    //אם קיבלתי את הערך מינוס אחד אז אני עושה הוספה
+           if(Tmp.UserId == -1)    //אם קיבלתי את הערך מינוס אחד אז אני עושה הוספה
             {
-                Sql = $"INSERT INTO t_Books (BooksName)Values(N'{Tmp.BookName}')";
+                Sql = $"INSERT INTO t_Books (BooksName)Values(N'{Tmp.UserName}')";
             }
            else  //אם לא הוספה אז עושה עדכון
             {
-                Sql = $"UPDATE T_Books set BooksName=N'{Tmp.BookName}'WHERE BooksId={Tmp.BookId}";
+                Sql = $"UPDATE T_Books set BooksName=N'{Tmp.UserName}'WHERE BooksId={Tmp.UserId}";
             }
 
-            ReCount = db.ExecuteNonQuery(Sql); //מחזירה מספר שלן שמייצג כמה רשימות הושפעו
-            if(Tmp.BookId == -1)
+            ReCount = Db.ExecuteNonQuery(Sql); //מחזירה מספר שלן שמייצג כמה רשימות הושפעו
+            if(Tmp.UserId == -1)
             {
-                Tmp.BookId= Db.GetMaxId("T_Books","BooksId")
+                Tmp.UserId = Db.GetMaxId("T_Books", "BooksId");
             }
             return ReCount;
         }

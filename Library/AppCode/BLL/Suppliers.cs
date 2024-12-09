@@ -5,7 +5,7 @@ using System.Web;
 using DAL;
 using BLL;
 
-namespace Library.AppCode.BLL
+namespace BLL
 {
     public class Suppliers
     {

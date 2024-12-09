@@ -13,16 +13,21 @@ namespace BLL
         public int UserId { get; set; }
         public string Name { get; set; }
         public string UserName { get; set; }
-        public string UserPassword { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
         public DateTime JoinDate { get; set; }
+        public string Address { get; set; }
+        public string UserPass { get; set; }
 
         public int Save()
         {
-            return UsersDAL.Save();
+            return UsersDAL.Save(this);
         }
-        public static Books GetById(int id)
+        //public int Save(string ContextName)
+        //{
+        //    return UsersDAL.Save(this, ContextName);
+        //}
+        public static Users GetById(int id)
         {
             return UsersDAL.GetById(id);
         }

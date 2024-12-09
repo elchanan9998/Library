@@ -1,0 +1,618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdhSwecpNGUOSQGJEteOGTgAAAAACAAAAAAAQZgAAAAEAACAAAAD4FRI/4rpCPJNdnVvvY/jAnoOkX/tNt0gW0QPEegpwSQAAAAAOgAAAAAIAACAAAAAFtaQqi8gie//c8Gtj1G9DaX4P7TzNz+CiqraKBnsLhCAAAAAL2G8SrLPR5sec17tkOfVjwNWwfmin+sOtN6dcQGGIl0AAAABv2yvZCQajEupF4cB3E7K5HPqGXAJLYDgza260ZQ8BvfgyRpmNNjask1xcejt+E1ur8pHMXRLJaq79dO69pAM+</EncryptedPassword>
+    <_PublishTargetUrl>ftp://155.254.244.34/www.test245.somee.com</_PublishTargetUrl>
+    <History>False|2024-07-01T19:05:11.9037060Z;False|2024-07-01T21:49:36.3699717+03:00;False|2024-07-01T21:30:35.7486350+03:00;False|2024-07-01T21:26:05.6875735+03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AppCode/RealAdmin/.DS_Store">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/AdminMaster.Master">
+      <publishTime>06/30/2024 22:11:14</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/assets/avatars/face-1.jpg">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/assets/avatars/face-2.jpg">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/assets/avatars/face-3.jpg">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/assets/avatars/face-4.jpg">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/assets/avatars/face-5.jpg">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/assets/avatars/face-6.jpg">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/assets/avatars/face-7.jpg">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/assets/avatars/face-8.jpg">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/assets/images/logo.svg">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/assets/images/qrcode.svg">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/assets/products/p1.jpg">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/assets/products/p2.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/assets/products/p3.jpg">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/assets/products/p4.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/auth-confirm.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/auth-login-half.html">
+      <publishTime>06/21/2024 08:43:26</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/auth-login.html">
+      <publishTime>06/21/2024 08:43:26</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/auth-register.html">
+      <publishTime>06/21/2024 08:43:26</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/auth-resetpw.html">
+      <publishTime>06/21/2024 08:43:26</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/calendar.html">
+      <publishTime>06/21/2024 08:43:26</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/chart-apexcharts.html">
+      <publishTime>06/21/2024 08:43:26</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/chart-chartjs.html">
+      <publishTime>06/21/2024 08:43:26</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/chart-inline.html">
+      <publishTime>06/21/2024 08:43:26</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/contacts-grid.html">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/contacts-list.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/contacts-new.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/css/apexcharts.css">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/css/app-dark.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/css/app-light.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/css/app-rtl.css">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/css/bootstrap-datepicker.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/css/dataTables.bootstrap4.css">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/css/daterangepicker.css">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/css/dropzone.css">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/css/dropzone.min.css">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/css/feather.css">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/css/fullcalendar.css">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/css/jquery.steps.css">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/css/jquery.timepicker.css">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/css/perfect-scrollbar.css">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/css/quill.snow.css">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/css/select2-bootstrap4.css">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/css/select2.css">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/css/simplebar.css">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/css/uppy.min.css">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/dashboard-analytics.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/dashboard-saas.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/dashboard-sales.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/dashboard-system.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/data/contacts.json">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/data/eu.topo.json">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/datamaps.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/Defalut1.aspx">
+      <publishTime>06/26/2024 18:59:28</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/files-grid.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/files-list.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/fonts/feather.eot">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/fonts/feather.svg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/fonts/feather.ttf">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/fonts/feather.woff">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/form_advanced.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/form_elements.html">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/form_layouts.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/form_upload.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/form_validation.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/form_wizard.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/index-boxed.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/index-horizontal.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/index-vertical.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/index.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/apexcharts.custom.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/apexcharts.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/apps.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/bootstrap-datepicker.min.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/bootstrap.min.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/Chart.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/config.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/d3.min.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/datamaps-zoomto.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/datamaps.all.min.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/datamaps.custom.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/dataTables.bootstrap4.min.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/daterangepicker.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/dropzone.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/fullcalendar.custom.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/fullcalendar.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/gauge.min.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/jquery.dataTables.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/jquery.mask.min.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/jquery.min.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/jquery.sparkline.min.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/jquery.steps.min.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/jquery.stickOnScroll.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/jquery.timepicker.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/jquery.validate.min.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/moment.min.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/perfect-scrollbar.min.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/popper.min.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/quill.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/select2.min.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/simplebar.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/tinycolor-min.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/topojson.min.js">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/js/uppy.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/page-404.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/page-500.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/page-blank.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/page-invoice.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/page-orders.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/page-timeline.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/profile-notification.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/profile-security.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/profile-settings.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/profile.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/support-center.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/support-faqs.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/support-ticket-detail.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/support-tickets.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/table_advanced.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/table_basic.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/table_datatables.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/ui-buttons.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/ui-color.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/ui-icons.html">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/ui-modals.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/ui-notification.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/ui-progress.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/ui-tabs-accordion.html">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/ui-typograpy.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/UsersList.aspx">
+      <publishTime>06/30/2024 22:27:50</publishTime>
+    </File>
+    <File Include="AppCode/RealAdmin/widgets.html">
+      <publishTime>06/21/2024 08:43:27</publishTime>
+    </File>
+    <File Include="bin/Google.Apis.Admin.Directory.directory_v1.dll">
+      <publishTime>06/20/2024 11:07:52</publishTime>
+    </File>
+    <File Include="bin/Google.Apis.Admin.Directory.directory_v1.pdb">
+      <publishTime>06/20/2024 11:07:52</publishTime>
+    </File>
+    <File Include="bin/Google.Apis.Auth.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Google.Apis.Auth.pdb">
+      <publishTime>04/15/2024 11:03:26</publishTime>
+    </File>
+    <File Include="bin/Google.Apis.Core.dll">
+      <publishTime>04/15/2024 11:03:22</publishTime>
+    </File>
+    <File Include="bin/Google.Apis.Core.pdb">
+      <publishTime>04/15/2024 11:03:22</publishTime>
+    </File>
+    <File Include="bin/Google.Apis.dll">
+      <publishTime>04/15/2024 11:03:24</publishTime>
+    </File>
+    <File Include="bin/Google.Apis.pdb">
+      <publishTime>04/15/2024 11:03:24</publishTime>
+    </File>
+    <File Include="bin/Library.dll">
+      <publishTime>07/01/2024 21:30:00</publishTime>
+    </File>
+    <File Include="bin/Library.pdb">
+      <publishTime>07/01/2024 21:30:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>09/05/2018 17:10:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Exchange.WebServices.Auth.dll">
+      <publishTime>12/19/2014 20:02:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Exchange.WebServices.Auth.pdb">
+      <publishTime>12/19/2014 20:02:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Exchange.WebServices.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Exchange.WebServices.pdb">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/08/2023 09:09:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>08/08/2018 06:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>08/08/2018 13:18:12</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>08/08/2018 13:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>08/08/2018 06:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>08/08/2018 13:18:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>08/08/2018 13:09:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>08/08/2018 06:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>08/08/2018 06:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>08/08/2018 06:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>08/08/2018 06:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>08/08/2018 06:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>08/08/2018 06:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>08/08/2018 13:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>12/05/2017 09:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>12/05/2017 09:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>08/08/2018 13:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>08/08/2018 13:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>11/05/2016 18:55:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>11/05/2016 18:55:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>05/11/2016 18:55:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>11/05/2016 18:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>11/05/2016 18:55:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>11/05/2016 18:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Globalization.Calendars.dll">
+      <publishTime>11/05/2016 18:56:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.ZipFile.dll">
+      <publishTime>11/05/2016 18:56:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Http.dll">
+      <publishTime>11/05/2016 18:56:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Sockets.dll">
+      <publishTime>11/05/2016 18:56:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <publishTime>11/05/2016 18:57:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>11/05/2016 18:57:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>11/05/2016 18:57:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>11/05/2016 18:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>11/05/2016 18:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>11/05/2016 18:57:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
+      <publishTime>11/05/2016 18:57:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>11/05/2016 18:57:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>11/05/2016 18:57:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>11/05/2016 18:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>11/05/2016 18:57:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>11/05/2016 18:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>08/08/2018 06:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>08/08/2018 13:18:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>08/08/2018 13:09:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>08/08/2018 06:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>08/08/2018 13:18:16</publishTime>
+    </File>
+    <File Include="bin/Sitecore.FakeDb.dll">
+      <publishTime>12/05/2019 23:32:02</publishTime>
+    </File>
+    <File Include="bin/System.CodeDom.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>06/24/2024 21:28:04</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/01/2024 21:30:35</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -13,5 +13,18 @@ namespace Library
         {
 
         }
+
+        protected void BtnLogin_Click(object sender, EventArgs e)
+        {
+            if (BtnLogin.Text == "abc" && TextPass.Text == "123")
+            {
+                Session["Login"] = "ok";
+                Response.Redirect("/Defalut1");
+            }
+            else
+            {
+                LtMsg2.Text = "שם וסיסמה אינם נכונים";
+            }
+        }
     }
 }

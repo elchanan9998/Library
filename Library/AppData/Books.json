@@ -1,0 +1,37 @@
+[
+  {
+    "Id": 1,
+    "Title": "Harry Potter and the Philosopher's Stone",
+    "Author": "J.K. Rowling",
+    "Price": 19.99,
+    "Description": "A young wizard's journey begins."
+  },
+  {
+    "Id": 2,
+    "Title": "The Hobbit",
+    "Author": "J.R.R. Tolkien",
+    "Price": 14.99,
+    "Description": "A hobbit's adventure in Middle-earth."
+  },
+  {
+    "Id": 3,
+    "Title": "1984",
+    "Author": "George Orwell",
+    "Price": 12.99,
+    "Description": "A dystopian novel about totalitarian regime."
+  },
+  {
+    "Id": 4,
+    "Title": "To Kill a Mockingbird",
+    "Author": "Harper Lee",
+    "Price": 10.99,
+    "Description": "A novel about the serious issues of rape and racial inequality."
+  },
+  {
+    "Id": 5,
+    "Title": "The Great Gatsby",
+    "Author": "F. Scott Fitzgerald",
+    "Price": 8.99,
+    "Description": "A novel about the American dream and the roaring twenties."
+  }
+]

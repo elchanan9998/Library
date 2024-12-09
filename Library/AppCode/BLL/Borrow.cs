@@ -9,6 +9,7 @@ namespace BLL
     public class Borrow
     {
         public int BorrowId {get; set;} 
+        public string BorrowName { get; set;}
         public int BookId { get; set;}
         public int UserId { get; set;}
         public DateTime BorrowDate { get; set;}
